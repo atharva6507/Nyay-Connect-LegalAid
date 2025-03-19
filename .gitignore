@@ -1,0 +1,46 @@
+# Ignore virtual environment
+myenv/
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore logs and temporary files
+logs/
+*.log
+debug.log
+*.out
+
+# Ignore dependencies
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore compiled C extensions
+*.so
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore FastAPI and Uvicorn auto-generated files
+instance/
+*.db
+*.sqlite3
+
+# Ignore local package installations
+site/
+dist/
+build/
