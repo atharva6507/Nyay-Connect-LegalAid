@@ -1,13 +1,3 @@
-from langchain_groq import ChatGroq
-from langchain_core.prompts import PromptTemplate
-import json
-
-llm = ChatGroq(
-    model="llama-3.1-8b-instant",
-    api_key="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",
-    temperature=0,
-)
-
 import json
 import re
 from langchain_groq import ChatGroq
