@@ -2,6 +2,7 @@ import os
 import json
 from dotenv import load_dotenv
 from pinecone import Pinecone
+from legalaid_module.cleanJson import cleanjson
 
 # Load environment variables
 load_dotenv()
@@ -49,7 +50,9 @@ def find_relevant_lawyers(query, top_k=5):
         }
         lawyers.append(lawyer)
 
-    return json.dumps({"lawyers": lawyers}, indent=4)
+    response = json.dumps({"lawyers": lawyers}, indent=4)
+    return cleanjson(response)
+
 
 # def main():
 #     query = input()
