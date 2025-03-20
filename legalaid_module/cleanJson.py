@@ -17,6 +17,7 @@ def cleanjson(input):
         Do not include any explanations, comments, or additional text.
         Also there are multiple values in expertise field, make it array of expertises.
         There should be all expertise included in that array, ensure all expertise are there and none is dropped.
+        Also, there are some "/"s there in the expertise field, remove them and separate each expertise in array.
         Return **only** valid JSON.
         ### Input:
         {jsonstr}
